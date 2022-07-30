@@ -61,7 +61,7 @@ Event Loop :
 Web APIs: bản chất Runtime của Javascript chỉ có 1 luồng và không thể chạy multi-thread, vì thế browser đã viết thêm một Web APIs để bọc runtime này lại (tương tự dưới NodeJS sẽ dùng C++ để bọc V8 lại). Web APIs này sẽ giúp cho JS có thể hoạt động một cách bất đồng bộ như multi-thread.
 Callback Queue: Như tên của nó là hàng đợi các callback do thằng Web APIs ở trên trả về.
 
-![eventloop.jpg](./eventloop.jpg)
+![eventloop](https://user-images.githubusercontent.com/107058157/181917290-d51cdefa-4137-43f1-b09a-5f45af143988.jpg)
 
 	Xử lí bất đồng bộ trong javascript
 Promise:
@@ -389,7 +389,7 @@ Tổng hợp các câu hỏi thường gặp
                                         Tổng Quan Kiến Thức Git
 
 @GIT FLOW
-![gitflow.png](./gitflow.png)
+![gitflow](https://user-images.githubusercontent.com/107058157/181917246-81602c56-046e-40b6-bc8f-c52da31a027f.png)
 * master
     là nhánh ở vị trí trên cùng, nơi chứa toàn bộ dữ liệu source của project. Ở nhành này thì không có quyền thay đổi source code.
     
@@ -414,13 +414,13 @@ Tổng hợp các câu hỏi thường gặp
 	=> sau khi code xong -> git commit và push code -> tạo PR (no bug) -> nếu được leader đồng ý thì sẽ được merge request lên.Remote Repo
 nếu không thì sẽ thông báo cho lập trình viên sửa request hoặc pull code phiên bản mới nhất về.
 
-![remolocal.png](./remolocal.png)
+![remolocal](https://user-images.githubusercontent.com/107058157/181917344-749791ea-6393-4fb7-b106-6fde3ce33b1f.png)
 
 
 @CÁC LỆNH GIT CƠ BẢN
 * Thiết lập tài khoản:
 	+ git config -- global user.name và git config -- global user.email. 
-	+ Để set email hoặc tên mới git config -- global user.name = “Kỳ Lê” và git config -- global user.email =“hainguyen@gmail.com”
+	+ Để set email hoặc tên mới git config -- global user.name = “dennis0406” và git config -- global user.email =“laplepnv23@gmail.com”
 
 * git init : Khởi tạo 1 git repository
 * git clone: clone code từ remote repo
@@ -456,7 +456,7 @@ nếu không thì sẽ thông báo cho lập trình viên sửa request hoặc p
     + Git rebase: gộp commit nhánh con và đẩy lên đầu của nhánh master(vd) tiện cho việc leader review lại code, theo dõi quá trình các tính năng
         - ví dụ: đang ở nhánh feat/login -> lấy nhánh master để rebase-> git rebase master -> nếu có conflict thì fix -> git push --force-with-lease -> checkout nhánh master -> git merge để đồng bộ code của nhánh master với nhánh feat/login
 
-    ![mergerebase.png](./mergerebase.png)
+    ![mergerebase](https://user-images.githubusercontent.com/107058157/181917433-c345f3a0-cbc0-4b4a-aa2f-822b87d61c29.png)
     + merge nhưng muốn trở lại lúc đầu : người khác chưa pull
         # tiến hành merge
         $ git checkout <tên brach nguồn>
