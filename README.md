@@ -1,10 +1,4 @@
-# Review Js_Git
-
-Name: Lê Ngọc Vĩ
-Team: Front-End
-Onboarding: 04/04/2022
-
-
+# What you know about
         JavaSCript Co ban
 
 1. data type : String, Number, Boolean, null, undefined, BigInt và Symbol,Object, Array
