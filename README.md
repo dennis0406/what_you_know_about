@@ -119,10 +119,10 @@ async await : const test = async()=>{
 	+ Hoisting với let,const : vẫn hoisted nhưng giá trị mặc định khi hoisted không tồn tại nên được biế được đưa vào vùng không truy cập được
 		ví dụ: console.log(name);
 			var name ;
-			name = "kỳ" => thì trình biên dịch sẽ chạy và đẩy "var name" lên đầu
+			name = "dennis" => thì trình biên dịch sẽ chạy và đẩy "var name" lên đầu
 
 5. use trict hay Strict mode: chế độ nghiêm ngặt code trong JavaScript
-	+ Ví dụ: fullName= "Le Quang Kỳ" => console.log(fullName) => Không xuất hiện lỗi
+	+ Ví dụ: fullName= "dennis lap" => console.log(fullName) => Không xuất hiện lỗi
 	+ Công dụng: tránh quên từ khóa khai báo, tránh trùng tên biến, sử dụng bộ nhớ hiệu quả tránh biến toàn cục
 	+ Sủ dụng: thêm "use strict" vào đầu js => nếu không thì ko dùng được	
 
@@ -207,7 +207,7 @@ console.log(array1); // > Array ["a", "b", "c"]
 console.log(array2); // > Array ["d", "e", "f"]
 -----------------------------------------------------------------------------------
 2. fillter(): lọc mảng thỏa mãn điều kiện => mảng mới và không làm thay đổi mảng ban đầu
- var newArray = oldArray.fillter((item)=> ( item.name != "ky")) => lọc mảng và trả về mảng mới thỏa mãn điều kiện name!="ky"
+ var newArray = oldArray.fillter((item)=> ( item.name != "dennis")) => lọc mảng và trả về mảng mới thỏa mãn điều kiện name!="dennis"
 -----------------------------------------------------------------------------------
 3. find(): lọc và trả về phần tử đầu tiên nếu tìm thấy, nếu ko thì undefined => không làm thay đổi mảng
 var array = [5, 12, 8, 130, 44];
@@ -282,8 +282,8 @@ initialValue là giá trị cho tham số thứ nhất (accumulator) của hàm 
 
 1. assign(): Sao chép các gía trị của tất cả các thuộc tính riêng từ một hoặc nhiều object vào một object khác.
 			const sourceObject = {
-					firstName: 'Hieu',
-					lastName: 'Bui'
+					firstName: 'Lap',
+					lastName: 'Dennis'
 			};
 			const targetObject = Object.assign({}, sourceObject); tạo ra đối tượng mới
 			console.log(targetObject);
@@ -297,24 +297,24 @@ initialValue là giá trị cho tham số thứ nhất (accumulator) của hàm 
 
 3. values(): Object.values(obj) => trả về mảng values
 			const obj = {
-					firstName: 'Kỳ',
-					lastName: 'Lê'
+					firstName: 'Lap',
+					lastName: 'Dennis'
 			};
-			console.log(Object.values(obj)); // [ 'Kỳ', 'Lê' ]
+			console.log(Object.values(obj)); // [ 'Lap', 'Dennis' ]
 
 
 -------------------------------
 				ES6 trong JavaScript
 
 * Một số tính năng đặc biệt ES6: 
-	- nhúng biểu thức JS vào chuỗi: var name = 'Kỳ' => console.log(`My name is ${name}`);
+	- nhúng biểu thức JS vào chuỗi: var name = 'Dennis' => console.log(`My name is ${name}`);
 	- nhiều đoạn string, nhiều dòng: var content = `Dòng thứ 1
                																		Dòng thứ 2`
 	- Destructuring Assignment: lấy giá trị phần tử object, array và gán cho biến cho trước
 		ví dụ: 
 				var object={
-					name:'ky',
-					class1:22
+					name:'Dennis',
+					class1:23
 				};
 				var {name,class1}=object;
 				console.log(name);
