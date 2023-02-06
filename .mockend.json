@@ -1,0 +1,27 @@
+[
+  {
+    id: 1,
+    countryName: 'Việt Nam',
+    countryCode: '84',
+  },
+  {
+    id: 2,
+    countryName: 'China',
+    countryCode: '886',
+  },
+  {
+    id: 3,
+    countryName: 'North Korea',
+    countryCode: '850',
+  },
+  {
+    id: 4,
+    countryName: 'South Korea',
+    countryCode: '82',
+  },
+  {
+    id: 5,
+    countryName: 'USA',
+    countryCode: '61',
+  },
+];
